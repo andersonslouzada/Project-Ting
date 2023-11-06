@@ -5,8 +5,7 @@ import sys
 def process(path_file, instance):
     for i in instance._data:
         if i['nome_do_arquivo'] == path_file:
-            sys.stderr.write(f'O arquivo {path_file}'
-                             'já foi processado anteriormente.\n')
+            sys.stderr.write(f'O arquivo {path_file} já foi importado\n')
             return
 
     archive = txt_importer(path_file)
